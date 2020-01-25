@@ -1,0 +1,18 @@
+<div class="container" *ngIf="data!=undefined">
+    <h3>I N V O I C E</h3><br>
+    <div *ngIf="data!=undefined">
+        <div class="row">
+            <div class="col-xs-3"><b>Item</b><br>{{data.itemName1}}<br>{{data.itemName2}}</div>
+            <div class="col-xs-3"><b>Price</b><br>${{data.itemPrice1}}<br>${{data.itemPrice2}}</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6"><hr></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3"><b>Total</b></div>
+            <div class="col-xs-3"><b>${{data.itemPrice1+data.itemPrice2}}</b></div>
+        </div>
+        <br>
+        <button class="btn btn-primary" (click)="calculateTax()">Checkout</button>
+    </div>
+</div>

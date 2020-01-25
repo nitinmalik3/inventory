@@ -1,0 +1,19 @@
+<div class="container">
+    <h3>I T E M S</h3><br>
+    <div class="row">
+        <div class="form-group col-xs-3">
+            <label for="item1">Item 1</label>
+            <input type="text" class="form-control" [(ngModel)]="itemName1"><br>
+            <label for="item2">Item 2</label>
+            <input type="text" class="form-control" [(ngModel)]="itemName2">
+        </div>
+        <div class="form-group col-xs-3">
+            <label for="item1price">Item 1 Price</label>
+            <input type="number" class="form-control" [(ngModel)]="itemPrice1"><br>
+            <label for="item2price">Item 2 Price</label>
+            <input type="number" class="form-control" [(ngModel)]="itemPrice2">
+        </div>
+    </div>
+    <br>
+    <button class="btn btn-success" (click)="onGenerateInvoice()">Generate Invoice</button>
+</div>

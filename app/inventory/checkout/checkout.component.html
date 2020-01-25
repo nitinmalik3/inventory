@@ -1,0 +1,15 @@
+<div class="container" *ngIf="obj.amount!=undefined">
+    <h3>C H E C K O U T</h3><br>
+    <div class="row">
+        <div class="col-xs-3"><b>Total Amount</b></div>
+        <div class="col-xs-3">${{obj.amount}}</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3"><b>Tax</b></div>
+        <div class="col-xs-3">${{obj.getTax(obj.amount)}}</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3"><b>Amount with Tax</b></div>
+        <div class="col-xs-3">${{obj.getBill(obj.amount)}}</div>
+    </div><br><br>
+</div>
